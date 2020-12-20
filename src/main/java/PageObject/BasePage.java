@@ -44,7 +44,7 @@ public class BasePage extends DriverFactory{
 	}
 	public void scrollToViewElement(By by)
 	{
-		var webElement = getDriver().findElement(by);
+		WebElement webElement = getDriver().findElement(by);
 		((JavascriptExecutor)getDriver()).executeScript("arguments[0].scrollIntoView();", webElement);
 		
 	}
@@ -84,7 +84,7 @@ public class BasePage extends DriverFactory{
 	
 	public Boolean IsDisplayed(By by)
 	{
-		var element=getDriver().findElement(by);
+		WebElement element=getDriver().findElement(by);
 		if(element.isDisplayed())
 		{
 			return true;
