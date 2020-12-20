@@ -7,15 +7,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DriverFactory 
-{
-	public static WebDriver driver;
+{	public static WebDriver driver;
 	public WebDriver getDriver()
 	{
 	try
 	{
-	ReadConfigFile file =new ReadConfigFile();
-	String browserName=file.getBrowser();
-		switch(browserName)
+	//ReadConfigFile file =new ReadConfigFile();
+	//String browserName=file.getBrowser();
+		switch("chrome")
 		{
 			case "chrome":
 				if(null==driver)
