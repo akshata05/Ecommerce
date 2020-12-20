@@ -25,6 +25,17 @@ public class MasterHook extends DriverFactory  {
 	{
 		driver=getDriver();
 	}
+	
+	@Before("@First")
+	public void DisplayFirst()
+	{
+		System.out.println("First");
+	}
+	@Before("@Second")
+	public void DisplaySecond()
+	{
+		System.out.println("Second");
+	}
 	@After()
 	public void tearDown(Scenario scenario)
 	{

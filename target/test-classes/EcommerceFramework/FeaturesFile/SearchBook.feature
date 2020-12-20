@@ -1,6 +1,6 @@
 Feature: User should be able to search for book in Book Store
 
-
+@First
 Scenario: Login in to account with valid credentials
 Given User navigates to demoqa website
 And User enters book name in search field
@@ -8,7 +8,7 @@ And User clicks on search button
 Then User shoulde see the filtered book
 
 
-
+@Second
 Scenario: Login in to account with valid credentials
 Given User navigates to demoqa website
 And User clicks on the login button 
